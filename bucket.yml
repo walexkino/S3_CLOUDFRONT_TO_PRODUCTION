@@ -5,6 +5,8 @@ MyBucketName:
   Type: String
   
 Resources:
+
+#BUCKET WEB APP
 WebsiteBucket:
   Type: AWS::S3::Bucket
   Properties:
@@ -13,6 +15,8 @@ WebsiteBucket:
     WebsiteConfiguration:
       IndexDocument: index.html
       ErrorDocument: error.html
+
+      # BucketPolicy
 WebsiteBucketPolicy:
   Type: AWS::S3::BucketPolicy
   Properties:
